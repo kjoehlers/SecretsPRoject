@@ -29,10 +29,12 @@ app.use(passport.session());
 
 // Replace the uri string with your connection string.
 // below is the cloud version
-// const uri = process.env.REMOTE_DB_URI;
+// const uri =
+//   "mongodb+srv://mongoKen:dolly@cluster0.w10yz.mongodb.net/userDB?retryWrites=true&w=majority";
 
 // below is the local version
-const uri = process.env.LOCAL_DB_URI;
+const uri =
+  "mongodb://admin:admin123@192.168.0.21:27017/userDB?authSource=admin&readPreference=primary&ssl=false&directConnection=true";
 
 // below is the short local version
 //  const uri = "mongodb://admin:admin123@192.168.0.21:27017/userDB";
